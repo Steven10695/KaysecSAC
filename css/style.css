@@ -14,6 +14,33 @@ h2{
 .titulo {
     font-weight: 700!important;
 }
+/* Scroll */
+.header-scroll{
+    opacity: 1;
+    position: fixed;
+    margin-top: -300px;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: all .5s ease;
+}
+
+.header-scroll.activo{
+    margin-top: 0;
+    opacity: 1;
+}
+.header-scroll .nav-link{
+    color: #777!important;
+}
+.header-scroll .btn-outline-success{
+    color: #00b30c!important;
+}
+.header-scroll .btn-outline-success:hover{
+    color: white!important;
+}
+
+
 /* Header */
 .header{
     background-image: url(../img/hero.jpg);
@@ -55,5 +82,72 @@ h2{
 
 /* VIDEO SECTION */
 .bg-dark{
-    
+    background-color: #353537!important;
+}
+
+.nuevo-pro .row{
+    min-height: 25rem;
+}
+
+/** Testimoniales **/
+
+.testimoniales{
+    background-color: #eaeaeb;
+}
+.testimoniales .carousel{
+    background-color: white;
+}
+.testimoniales .carousel-item h4{
+    font-weight: 700;
+}
+
+.testimoniales .carousel-item blockquote{
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+
+.testimoniales .carousel-item p{
+    font-size: .8rem;
+}
+
+/** Sociales **/
+
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #676767;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="whatsapp.com"]::before{
+    content: '\f232';
+}
+
+ /* foooter */
+
+ .copyright {
+    color: #979797;
+    font-size: .8rem;
 }
